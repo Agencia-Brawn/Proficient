@@ -1,11 +1,4 @@
 /**
-* Template Name: HeroBiz - v2.1.0
-* Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/**
 * Check out variables.css for easy customization of colors, typography, and other repetitive properties
 */
 /*--------------------------------------------------------------
@@ -208,13 +201,14 @@ section {
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
+  background: var(--color-secondary);
 }
 .header.sticked {
-  background: var(--color-white);
+  background: var(--color-primary);
   box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
 }
 .header .logo img {
-  max-height: 40px;
+  max-height: 76px;
   margin-right: 6px;
 }
 .header .logo h1 {
@@ -275,7 +269,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 400;
-    color: rgba(var(--color-secondary-dark-rgb), 0.7);
+    color: var(--color-white);
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
