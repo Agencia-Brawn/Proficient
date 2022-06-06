@@ -26,6 +26,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 
   <!-- Variables CSS Files. Uncomment your preferred color scheme -->
   <link href="assets/css/variables.css" rel="stylesheet">
@@ -48,20 +49,43 @@
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <img class="img-fluid" src="assets/img/logo-sem-fundo.png" alt="">
         <!-- <h1>HeroBiz<span>.</span></h1> -->
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
+          <li><a class="nav-link scrollto" href="#">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Editora</span> <i
+            class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Quem Somos</a></li>
+              <li><a href="#">Missão</a></li>
+              <li><a href="#">Direitos Autorais</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Serviços</span> <i
+            class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Acessoria Acadêmica</a></li>
+              <li><a href="#">Livros Publicados</a></li>
+              <li><a href="#">Artigos e Periódicos</a></li>
+              <li><a href="#">Normas e Editais</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Áreas de Estudo</span> <i
+            class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Enfermagem</a></li>
+              <li><a href="#">Biomedicina</a></li>
+              <li><a href="#">Fisioterapia</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#">Eventos</a></li>
+          <li><a href="#">Parceiros</a></li>
+          <li><a href="#">Contato</a></li>
 
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
+
           <!-- <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li>
@@ -86,136 +110,99 @@
               </li>
             </ul>
           </li> -->
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i
-                class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                    class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero carousel  carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-    <div class="carousel-item active" >
-      <div class="row justify-content-center gy-6" style="background-image: url(assets/img/banner1.jpg);">
-
-        <div class="col-lg-9 mt-5 mb-5 text-center">
-          <h2>Welcome to HeroBiz</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-          <a href="#featured-services" class="btn-get-started scrollto ">Get Started</a>
-        </div>
-
+  <!-- ======= CARROSEL INICIO ======= -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="#">
+          <img src="assets/img/hero-carousel/banner1.jpg" class="d-block w-100" alt="...">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="">
+          <img src="assets/img/hero-carousel/banner2.jpg" class="d-block w-100" alt="...">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="">
+          <img src="assets/img/hero-carousel/banner1.jpg" class="d-block w-100" alt="...">
+        </a>
       </div>
     </div>
-
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row justify-content-center gy-6">
-
-          <div class="col-lg-5 col-md-8">
-            <img src="assets/img/hero-carousel/hero-carousel-2.svg" alt="" class="img-fluid img">
-          </div>
-
-          <div class="col-lg-9 text-center">
-            <h2>At vero eos et accusamus</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam
-              et aut officiis debitis aut.</p>
-            <a href="#featured-services" class="btn-get-started scrollto ">Get Started</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row justify-content-center gy-6">
-
-          <div class="col-lg-5 col-md-8">
-            <img src="assets/img/hero-carousel/hero-carousel-3.svg" alt="" class="img-fluid img">
-          </div>
-
-          <div class="col-lg-9 text-center">
-            <h2>Temporibus autem quibusdam</h2>
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-              fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus
-              error sit voluptatem accusantium.</p>
-            <a href="#featured-services" class="btn-get-started scrollto ">Get Started</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <a class="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-    </a>
-
-    <a class="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-    </a>
-
-    <ol class="carousel-indicators"></ol>
-
-  </section><!-- End Hero Section -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- End CARROSEL INICIO -->
 
   <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
+    <!-- ======= SERVIÇOS ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container">
 
+        <div class="section-header">
+          <h2> Editora de Livros e de Coletâneas em Saúde </h2>
+        </div>
+
         <div class="row gy-4 d-flex justify-content-between">
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          <div class="col-xl-4 col-sm-6 d-flex" data-aos="zoom-out">
+            <div class="service-item position-relative d-flex align-items-center" style="background-image: url(assets/img/home/card-1.png);">
+              <div>
+                <h4><a href="#" class="stretched-link">Submissão de Artigos</a></h4>
+                <a href="#">
+                  <button class="btn btn-primary">Saiba Mais</button>
+                </a>
+              </div>
+
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <div class="col-xl-4 col-sm-6 d-flex" data-aos="zoom-out"  data-aos-delay="400">
+            <div class="service-item position-relative d-flex align-items-center" style="background-image: url(assets/img/home/card-2.png);">
+              <div>
+                <h4><a href="" class="stretched-link">Acessoria Acadêmica</a></h4>
+                <a href="#">
+                  <button class="btn btn-primary">Saiba Mais</button>
+                </a>
+              </div>
+
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          <div class="col-xl-4 col-sm-6 d-flex" data-aos="zoom-out"  data-aos-delay="600">
+            <div class="service-item position-relative d-flex align-items-center" style="background-image: url(assets/img/home/card-3.png);">
+              <div>
+                <h4><a href="" class="stretched-link">E-books Publicados</a></h4>
+                <a href="#">
+                  <button class="btn btn-primary">Saiba Mais</button>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Featured Services Section -->
+    <!-- End SERVIÇOS -->
 
     <!-- ======= EVENTOS ======= -->
     <section id="recent-blog-posts" class="recent-blog-posts">
@@ -231,45 +218,51 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="post-box">
               <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, December 12</span>
-                <span class="post-author"> / Julia Parker</span>
-              </div>
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-              <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa
-                est officiis. Modi cupiditate exercitationem qui magni est...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i></a>
+              <h3 class="post-title">
+                VIII Colóquio Internacional de Direito e Literatura</h3>
+                <div class="meta">
+                  <span class="post-date">Qua, 23 – sáb, 26 de out</span>
+                </div>
+              <a href="#" class="readmore stretched-link text-end">
+                <span>
+                  Saiba Mais
+                  <i class="bi bi-arrow-right"></i>
+                </span>
+              </a>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <div class="post-box">
               <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Fri, September 05</span>
-                <span class="post-author"> / Mario Douglas</span>
-              </div>
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-              <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam
-                omnis aliquid necessitatibus tempora consectetur doloribus...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i></a>
+              <h3 class="post-title">
+                VIII Colóquio Internacional de Direito e Literatura</h3>
+                <div class="meta">
+                  <span class="post-date">Qua, 23 – sáb, 26 de out</span>
+                </div>
+              <a href="#" class="readmore stretched-link text-end">
+                <span>
+                  Saiba Mais
+                  <i class="bi bi-arrow-right"></i>
+                </span>
+              </a>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
             <div class="post-box">
               <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, July 27</span>
-                <span class="post-author"> / Lisa Hunter</span>
-              </div>
-              <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-              <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae
-                consectetur magnam veritatis dicta nihil...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i></a>
+              <h3 class="post-title">
+                VIII Colóquio Internacional de Direito e Literatura</h3>
+                <div class="meta">
+                  <span class="post-date">Qua, 23 – sáb, 26 de out</span>
+                </div>
+              <a href="#" class="readmore stretched-link text-end">
+                <span>
+                  Saiba Mais
+                  <i class="bi bi-arrow-right"></i>
+                </span>
+              </a>
             </div>
           </div>
 
@@ -323,45 +316,45 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="post-box">
               <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, December 12</span>
-                <span class="post-author"> / Julia Parker</span>
-              </div>
               <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
               <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa
                 est officiis. Modi cupiditate exercitationem qui magni est...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i></a>
+                <a href="#" class="readmore stretched-link text-end">
+                  <span>
+                    Saiba Mais
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </a>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <div class="post-box">
               <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Fri, September 05</span>
-                <span class="post-author"> / Mario Douglas</span>
-              </div>
               <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
               <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam
                 omnis aliquid necessitatibus tempora consectetur doloribus...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i></a>
+                <a href="#" class="readmore stretched-link text-end">
+                  <span>
+                    Saiba Mais
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </a>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
             <div class="post-box">
               <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, July 27</span>
-                <span class="post-author"> / Lisa Hunter</span>
-              </div>
               <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
               <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae
                 consectetur magnam veritatis dicta nihil...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i></a>
+                <a href="#" class="readmore stretched-link text-end">
+                  <span>
+                    Saiba Mais
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </a>
             </div>
           </div>
 
@@ -381,50 +374,49 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6 d-flex align-items-center">
             <div class="footer-info">
               <div class=" mb-4">
                 <img class="img-fluid" src="assets/img/logo-sem-fundo.png" alt="">
               </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4>Contatos</h4>
+            <div class="footer-info">
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <a href="tel:91999999999">
+                  <strong>Telefone:</strong> (91) 9 9999-9999<br>
+                </a>
+                <a href="mailto:proficient@example.com">
+                  <strong>Email:</strong> proficient@example.com<br>
+                </a>
               </p>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Links Úteis</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Editora</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Serviços</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Áreas de Estudo</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Eventos</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Parceiros</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Contato</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
 
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -436,14 +428,10 @@
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div class="copyright">
-            &copy; Copyright <strong><span>HeroBiz</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Proficient</span></strong>. Todos os direitos reservados
           </div>
           <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Desenvolvido por <a href="" style="color: white;">Leonardo Soares</a>
           </div>
         </div>
 
@@ -460,8 +448,9 @@
 
   </footer><!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
   <div id="preloader"></div>
 
