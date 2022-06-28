@@ -999,6 +999,22 @@ section {
 } */
 
 /*--------------------------------------------------------------
+# Quem Somos Section
+--------------------------------------------------------------*/
+
+.banner-quem-somos {
+  background-image: url('https://www.2net.com.br//Repositorio/3748/Slides/7472f6cd-4.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-attachment: fixed;
+}
+
+.banner-quem-somos h1 {
+  color: #fff; 
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about .about-img {
